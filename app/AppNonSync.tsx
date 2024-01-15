@@ -4,9 +4,10 @@ import {Task} from './models/Task';
 import {TaskManager} from './components/TaskManager';
 
 import {useQuery} from '@realm/react';
+import UpdateDogName from './UpdateDogName';
 
 export const AppNonSync = () => {
-  const [showDone, setShowDone] = React.useState(false);
+/*   const [showDone, setShowDone] = React.useState(false);
   const tasks = useQuery(
     Task,
     collection =>
@@ -18,5 +19,6 @@ export const AppNonSync = () => {
 
   return (
     <TaskManager tasks={tasks} setShowDone={setShowDone} showDone={showDone} />
-  );
+  ); */
+  return <UpdateDogName/>
 };
